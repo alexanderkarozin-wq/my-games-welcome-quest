@@ -1,0 +1,1871 @@
+{
+  "title": "Сбой в мультивселенной MY.GAMES",
+  "description": "В игровых мирах **MY.GAMES** произошел странный сбой.\n\nГерои начали меняться местами, монстры заблудились между проектами, а порталы в другие миры открываются где попало.\n\nКажется, кто-то разбил ядро мультивселенной MY.GAMES на фрагменты. Тебе предстоит найти фрагменты ядра и вернуть мультивселенную в порядок. А заодно узнать, какой герой скрывается внутри тебя.\n\n**Готов начать?**",
+  "coverImage": "assets/001-coverimage.webp",
+  "start": "управление-мультивселенной-my-games",
+  "settings": {
+    "revealText": true,
+    "revealSpeed": 540,
+    "mapZoom": 100
+  },
+  "theme": {
+    "background": "#ffffff",
+    "surface": "#ffffff",
+    "text": "#222523",
+    "accent": "#5a2f8e",
+    "font": "system",
+    "backgroundImage": "assets/002-theme-backgroundimage.webp",
+    "mapBackdropImage": "",
+    "overlayEffect": "none",
+    "overlayOpacity": 0.2,
+    "overlaySpeed": 1,
+    "frame": "neutral",
+    "music": "assets/003-theme-music.mp3",
+    "clickSound": "assets/004-theme-clicksound.wav",
+    "successSound": "",
+    "failSound": "",
+    "diceSound": "",
+    "backgroundOpacity": 0.3,
+    "successAnimation": "glow",
+    "failureAnimation": "shake",
+    "volume": 0.5,
+    "musicVolume": 0.15,
+    "clickVolume": 0.55,
+    "successVolume": 1,
+    "failVolume": 1,
+    "diceVolume": 1
+  },
+  "analytics": {
+    "authRequired": false,
+    "fields": {
+      "name": true,
+      "email": false,
+      "organization": false,
+      "extra": false
+    },
+    "authTitle": "",
+    "authDescription": "",
+    "submitLabel": "",
+    "labels": {
+      "name": "",
+      "email": "",
+      "organization": "",
+      "extra": ""
+    },
+    "leaderboard": false
+  },
+  "scenes": [
+    {
+      "id": "управление-мультивселенной-my-games",
+      "title": "Управление мультивселенной MY.GAMES",
+      "image": "assets/005-scenes-image.webp",
+      "music": "",
+      "text": "По пути на кухню за чашкой кофе ты вдруг слышишь странный шум из кабинета с табличкой **«Управление мультивселенной MY.GAMES»**.\nЗа дверью одновременно раздаются сирены, механический гул, зомби-рычание и подозрительно бодрый звон колокольчика.\n\nЗаглянув внутрь, ты видишь тревожное сообщение на огромном экране:\n*«Ядро повреждено. Фрагменты утеряны. Порталы нестабильны».*\n\nРядом с экраном открылось множество порталов. Кажется, рядом нет никого, кто мог бы тебе помочь. Нужно срочно что-то делать.\n\n**Как поступишь?**\n",
+      "mode": "story",
+      "rewardItem": "",
+      "rewardImage": "",
+      "rewardText": "",
+      "rewardCollect": true,
+      "choices": [
+        {
+          "label": "Все-таки сначала заберу кофе. Спасать мультивселенную без кофе — слишком рискованно.",
+          "target": "zero-city",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 1
+        },
+        {
+          "label": "Осмотрюсь, изучу сообщение на экране и попробую понять, какой портал выглядит самым безопасным.",
+          "target": "zero-city",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 2
+        },
+        {
+          "label": "Запущу диагностику системы, отмечу координаты фрагментов ядра и составлю маршрут по мирам.",
+          "target": "zero-city",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 3
+        },
+        {
+          "label": "Прыгаю в самый яркий портал. Разберусь на месте, а сбой пусть сам меня боится.",
+          "target": "zero-city",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 4
+        }
+      ],
+      "answer": {
+        "prompt": "Ответ",
+        "values": "",
+        "success": "",
+        "failure": "",
+        "caseSensitive": false
+      },
+      "hidden": {
+        "enabled": false,
+        "label": "Открыть",
+        "target": "",
+        "rewardItem": "",
+        "rewardImage": "",
+        "rewardText": ""
+      },
+      "dice": {
+        "buttonLabel": "",
+        "sides": 6,
+        "outcomes": []
+      },
+      "score": {
+        "variable": "",
+        "buttonLabel": "",
+        "outcomes": []
+      },
+      "search": {
+        "prompt": "Осмотрите картинку и найдите предмет",
+        "points": []
+      },
+      "qte": {
+        "buttonLabel": "Начать испытание",
+        "image": "",
+        "speed": 1400,
+        "count": 4,
+        "allowedMisses": 1,
+        "successText": "Испытание пройдено.",
+        "failureText": "Не успели.",
+        "success": "",
+        "failure": ""
+      },
+      "dialogue": {
+        "characterName": "Персонаж",
+        "characterImage": "",
+        "lines": [],
+        "secretLabel": "Осмотреть",
+        "secretItem": "",
+        "secretImage": "",
+        "secretText": ""
+      },
+      "puzzle": {
+        "pieces": 9,
+        "timeLimit": 90,
+        "buttonLabel": "Собрать пазл",
+        "successText": "Пазл собран.",
+        "failureText": "Время вышло.",
+        "success": "",
+        "failure": ""
+      },
+      "cipher": {
+        "prompt": "Соберите правильную комбинацию",
+        "length": 4,
+        "maxErrors": 3,
+        "buttonLabel": "Подтвердить",
+        "options": [
+          {
+            "label": "A",
+            "image": ""
+          },
+          {
+            "label": "B",
+            "image": ""
+          },
+          {
+            "label": "C",
+            "image": ""
+          }
+        ],
+        "answer": [
+          "A",
+          "B",
+          "C",
+          "A"
+        ],
+        "successText": "Код принят.",
+        "failureText": "Механизм заблокирован.",
+        "success": "",
+        "failure": ""
+      },
+      "ending": {
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "zero-city",
+      "title": "Zero City",
+      "image": "assets/007-scenes-image.webp",
+      "music": "",
+      "text": "Портал выбрасывает тебя в одно из убежищ **Zero City**. Где-то за стенами ревут разъяренные зомби, в коридорах мигает аварийный свет, а в генераторной застрял первый фрагмент ядра.\n\nДвери убежища трясутся от ударов. Времени мало.\n\n**Что будешь делать?**\n",
+      "mode": "story",
+      "rewardItem": "",
+      "rewardImage": "",
+      "rewardText": "",
+      "rewardCollect": true,
+      "choices": [
+        {
+          "label": "Закрою ближайшую дверь, найду безопасный угол и немного передохну. Мне нужны силы.",
+          "target": "war-robots",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 1
+        },
+        {
+          "label": "Тихо осмотрю убежище, проверю вентиляцию и найду путь к генераторной без лишнего шума.",
+          "target": "war-robots",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 2
+        },
+        {
+          "label": "Организую выживших: одни держат двери, другие чинят генератор, а я забираю фрагмент.",
+          "target": "war-robots",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 3
+        },
+        {
+          "label": "Выхожу к зомби навстречу. Если они хотят в убежище, сначала пусть пройдут через меня.",
+          "target": "war-robots",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 4
+        }
+      ],
+      "answer": {
+        "prompt": "Что нужно ввести?",
+        "values": "",
+        "success": "",
+        "failure": "",
+        "caseSensitive": false
+      },
+      "hidden": {
+        "enabled": false,
+        "label": "Открыть",
+        "target": "",
+        "rewardItem": "",
+        "rewardImage": "",
+        "rewardText": ""
+      },
+      "dice": {
+        "buttonLabel": "",
+        "sides": 6,
+        "outcomes": []
+      },
+      "score": {
+        "variable": "",
+        "buttonLabel": "",
+        "outcomes": []
+      },
+      "search": {
+        "prompt": "Осмотрите картинку и найдите предмет",
+        "points": []
+      },
+      "qte": {
+        "buttonLabel": "Начать испытание",
+        "image": "",
+        "speed": 1400,
+        "count": 4,
+        "allowedMisses": 1,
+        "successText": "Испытание пройдено.",
+        "failureText": "Не успели.",
+        "success": "",
+        "failure": ""
+      },
+      "dialogue": {
+        "characterName": "Персонаж",
+        "characterImage": "",
+        "lines": [
+          "..."
+        ],
+        "secretLabel": "Осмотреть",
+        "secretItem": "",
+        "secretImage": "",
+        "secretText": ""
+      },
+      "puzzle": {
+        "pieces": 9,
+        "timeLimit": 90,
+        "buttonLabel": "Собрать пазл",
+        "successText": "Пазл собран.",
+        "failureText": "Время вышло.",
+        "success": "",
+        "failure": ""
+      },
+      "cipher": {
+        "prompt": "Соберите правильную комбинацию",
+        "length": 4,
+        "maxErrors": 3,
+        "buttonLabel": "Подтвердить",
+        "options": [
+          {
+            "label": "A",
+            "image": ""
+          },
+          {
+            "label": "B",
+            "image": ""
+          },
+          {
+            "label": "C",
+            "image": ""
+          }
+        ],
+        "answer": [
+          "A",
+          "B",
+          "C",
+          "A"
+        ],
+        "successText": "Код принят.",
+        "failureText": "Механизм заблокирован.",
+        "success": "",
+        "failure": ""
+      },
+      "ending": {
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "war-robots",
+      "title": "War Robots",
+      "image": "assets/006-scenes-image.webp",
+      "music": "",
+      "text": "Забрав фрагмент, ты вылетаешь в следующий портал и оказываешься прямо на поле боя вселенной **War Robots**. Вокруг грохочут огромные мехи, летят ракеты, а второй фрагмент ядра застрял в броне поврежденного робота.\n\nРобот неподвижно стоит посреди открытой зоны, и к нему уже приближается вражеский отряд. Кажется кто-то еще охотится за фрагментом. \n\n**Твои действия?**",
+      "mode": "story",
+      "rewardItem": "",
+      "rewardImage": "",
+      "rewardText": "",
+      "rewardCollect": true,
+      "choices": [
+        {
+          "label": "Спрячусь за обломком меха и подожду, пока станет потише. Заодно проверю, нет ли тут полезного лута.",
+          "target": "tacticool",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 1
+        },
+        {
+          "label": "Оценю траектории выстрелов, выберу безопасный маршрут и доберусь до робота короткими перебежками.",
+          "target": "tacticool",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 2
+        },
+        {
+          "label": "Подключусь к системе, запущу дрона-разведчика и вытащу фрагмент, пока враги отвлечены.",
+          "target": "tacticool",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 3
+        },
+        {
+          "label": "Запрыгну в ближайшего робота и пойду напролом. В атаку! ",
+          "target": "tacticool",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 4
+        }
+      ],
+      "answer": {
+        "prompt": "Что нужно ввести?",
+        "values": "",
+        "success": "",
+        "failure": "",
+        "caseSensitive": false
+      },
+      "hidden": {
+        "enabled": false,
+        "label": "Открыть",
+        "target": "",
+        "rewardItem": "",
+        "rewardImage": "",
+        "rewardText": ""
+      },
+      "dice": {
+        "buttonLabel": "",
+        "sides": 6,
+        "outcomes": []
+      },
+      "score": {
+        "variable": "",
+        "buttonLabel": "",
+        "outcomes": []
+      },
+      "search": {
+        "prompt": "Осмотрите картинку и найдите предмет",
+        "points": []
+      },
+      "qte": {
+        "buttonLabel": "Начать испытание",
+        "image": "",
+        "speed": 1400,
+        "count": 4,
+        "allowedMisses": 1,
+        "successText": "Испытание пройдено.",
+        "failureText": "Не успели.",
+        "success": "",
+        "failure": ""
+      },
+      "dialogue": {
+        "characterName": "Персонаж",
+        "characterImage": "",
+        "lines": [
+          "..."
+        ],
+        "secretLabel": "Осмотреть",
+        "secretItem": "",
+        "secretImage": "",
+        "secretText": ""
+      },
+      "puzzle": {
+        "pieces": 9,
+        "timeLimit": 90,
+        "buttonLabel": "Собрать пазл",
+        "successText": "Пазл собран.",
+        "failureText": "Время вышло.",
+        "success": "",
+        "failure": ""
+      },
+      "cipher": {
+        "prompt": "Соберите правильную комбинацию",
+        "length": 4,
+        "maxErrors": 3,
+        "buttonLabel": "Подтвердить",
+        "options": [
+          {
+            "label": "A",
+            "image": ""
+          },
+          {
+            "label": "B",
+            "image": ""
+          },
+          {
+            "label": "C",
+            "image": ""
+          }
+        ],
+        "answer": [
+          "A",
+          "B",
+          "C",
+          "A"
+        ],
+        "successText": "Код принят.",
+        "failureText": "Механизм заблокирован.",
+        "success": "",
+        "failure": ""
+      },
+      "ending": {
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "tacticool",
+      "title": "Tacticool",
+      "image": "assets/008-scenes-image.webp",
+      "music": "",
+      "text": "Новый портал переносит тебя на разборку двух отрядов в **Tacticool**. Команды уже готовы к бою, но из-за сбоя что-то пошло не так. Часть бойцов провалились через текстуры, а по центру карты бегает зомби с очередным фрагментом ядра.\n\nРация шумит, союзники спорят, противники уже занимают позиции.\n\n**Как поступишь?**\n",
+      "mode": "story",
+      "rewardItem": "",
+      "rewardImage": "",
+      "rewardText": "",
+      "rewardCollect": true,
+      "choices": [
+        {
+          "label": "Подожду, пока команды сами разберутся. Главное, чтобы меня не заметили.",
+          "target": "rush-royale",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 1
+        },
+        {
+          "label": "Пойду вдоль укрытий, отследив движение зомби и противников. Сначала соберу информацию.",
+          "target": "rush-royale",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 2
+        },
+        {
+          "label": "Возьму рацию и помогу своей команде загнать зомби в ловушку.",
+          "target": "rush-royale",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 3
+        },
+        {
+          "label": "Врываюсь через центр карты, хватаю фрагмент и ухожу, не оглядываясь на взрывы. Красиво, громко, эффектно.",
+          "target": "rush-royale",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 4
+        }
+      ],
+      "answer": {
+        "prompt": "Что нужно ввести?",
+        "values": "",
+        "success": "",
+        "failure": "",
+        "caseSensitive": false
+      },
+      "hidden": {
+        "enabled": false,
+        "label": "Открыть",
+        "target": "",
+        "rewardItem": "",
+        "rewardImage": "",
+        "rewardText": ""
+      },
+      "dice": {
+        "buttonLabel": "",
+        "sides": 6,
+        "outcomes": []
+      },
+      "score": {
+        "variable": "",
+        "buttonLabel": "",
+        "outcomes": []
+      },
+      "search": {
+        "prompt": "Осмотрите картинку и найдите предмет",
+        "points": []
+      },
+      "qte": {
+        "buttonLabel": "Начать испытание",
+        "image": "",
+        "speed": 1400,
+        "count": 4,
+        "allowedMisses": 1,
+        "successText": "Испытание пройдено.",
+        "failureText": "Не успели.",
+        "success": "",
+        "failure": ""
+      },
+      "dialogue": {
+        "characterName": "Персонаж",
+        "characterImage": "",
+        "lines": [
+          "..."
+        ],
+        "secretLabel": "Осмотреть",
+        "secretItem": "",
+        "secretImage": "",
+        "secretText": ""
+      },
+      "puzzle": {
+        "pieces": 9,
+        "timeLimit": 90,
+        "buttonLabel": "Собрать пазл",
+        "successText": "Пазл собран.",
+        "failureText": "Время вышло.",
+        "success": "",
+        "failure": ""
+      },
+      "cipher": {
+        "prompt": "Соберите правильную комбинацию",
+        "length": 4,
+        "maxErrors": 3,
+        "buttonLabel": "Подтвердить",
+        "options": [
+          {
+            "label": "A",
+            "image": ""
+          },
+          {
+            "label": "B",
+            "image": ""
+          },
+          {
+            "label": "C",
+            "image": ""
+          }
+        ],
+        "answer": [
+          "A",
+          "B",
+          "C",
+          "A"
+        ],
+        "successText": "Код принят.",
+        "failureText": "Механизм заблокирован.",
+        "success": "",
+        "failure": ""
+      },
+      "ending": {
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "rush-royale",
+      "title": "Rush Royale",
+      "image": "assets/009-scenes-image.webp",
+      "music": "",
+      "text": "Тебя затягивает в новый портал. Ты оказался на острове Рандум во вселенной **Rush Royale**. Ворота замка никто не защищает, пешки ушли на обед, а волна врагов уже движется к воротам. Посреди арены светится новый фрагмент ядра.\n\nМилый дракончик подозрительно смотрит на фрагмент, будто он похож на что-то съедобное.\n\n**Что будешь делать?**",
+      "mode": "story",
+      "rewardItem": "",
+      "rewardImage": "",
+      "rewardText": "",
+      "rewardCollect": true,
+      "choices": [
+        {
+          "label": "Сначала угощу чем-нибудь вкусным дракончика. Возможно, после еды он сам мне отдаст фрагмент.",
+          "target": "hustle-castle",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 1
+        },
+        {
+          "label": "Спокойно изучу игровое поле и найду безопасный момент, чтобы забрать фрагмент.",
+          "target": "hustle-castle",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 2
+        },
+        {
+          "label": "Соберу рабочую колоду, расставлю защиту и удержу волну, пока портал не стабилизируется.",
+          "target": "hustle-castle",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 3
+        },
+        {
+          "label": "Поставлю самых сильных юнитов в оборону. Зачем ждать, если можно просто задавить врагов мощью?",
+          "target": "hustle-castle",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 4
+        }
+      ],
+      "answer": {
+        "prompt": "Что нужно ввести?",
+        "values": "",
+        "success": "",
+        "failure": "",
+        "caseSensitive": false
+      },
+      "hidden": {
+        "enabled": false,
+        "label": "Открыть",
+        "target": "",
+        "rewardItem": "",
+        "rewardImage": "",
+        "rewardText": ""
+      },
+      "dice": {
+        "buttonLabel": "",
+        "sides": 6,
+        "outcomes": []
+      },
+      "score": {
+        "variable": "",
+        "buttonLabel": "",
+        "outcomes": []
+      },
+      "search": {
+        "prompt": "Осмотрите картинку и найдите предмет",
+        "points": []
+      },
+      "qte": {
+        "buttonLabel": "Начать испытание",
+        "image": "",
+        "speed": 1400,
+        "count": 4,
+        "allowedMisses": 1,
+        "successText": "Испытание пройдено.",
+        "failureText": "Не успели.",
+        "success": "",
+        "failure": ""
+      },
+      "dialogue": {
+        "characterName": "Персонаж",
+        "characterImage": "",
+        "lines": [
+          "..."
+        ],
+        "secretLabel": "Осмотреть",
+        "secretItem": "",
+        "secretImage": "",
+        "secretText": ""
+      },
+      "puzzle": {
+        "pieces": 9,
+        "timeLimit": 90,
+        "buttonLabel": "Собрать пазл",
+        "successText": "Пазл собран.",
+        "failureText": "Время вышло.",
+        "success": "",
+        "failure": ""
+      },
+      "cipher": {
+        "prompt": "Соберите правильную комбинацию",
+        "length": 4,
+        "maxErrors": 3,
+        "buttonLabel": "Подтвердить",
+        "options": [
+          {
+            "label": "A",
+            "image": ""
+          },
+          {
+            "label": "B",
+            "image": ""
+          },
+          {
+            "label": "C",
+            "image": ""
+          }
+        ],
+        "answer": [
+          "A",
+          "B",
+          "C",
+          "A"
+        ],
+        "successText": "Код принят.",
+        "failureText": "Механизм заблокирован.",
+        "success": "",
+        "failure": ""
+      },
+      "ending": {
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "hustle-castle",
+      "title": "Hustle Castle",
+      "image": "assets/010-scenes-image.webp",
+      "music": "",
+      "text": "Следующий портал переносит тебя в замок из **Hustle Castle**. В тронном зале переполох: жители панически бегают по этажам, в кладовой застрял робот (откуда он тут вообще), а на королевской короне сияет очередной фрагмент ядра.\n\nВсе смотрят на тебя так, будто ты теперь отвечаешь за порядок в замке.\n\n**Твои действия?**\n",
+      "mode": "story",
+      "rewardItem": "",
+      "rewardImage": "",
+      "rewardText": "",
+      "rewardCollect": true,
+      "choices": [
+        {
+          "label": "Сначала зайду в королевское хранилище, вдруг там еще один фрагмент ядра.",
+          "target": "grand-hotel-mania",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 1
+        },
+        {
+          "label": "Осмотрю замок и найду повод снять фрагмент с короны без лишнего шума.",
+          "target": "grand-hotel-mania",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 2
+        },
+        {
+          "label": "Произнесу вдохновляющую речь и аккуратно подведу короля к мысли, что без фрагмента я никак не смогу спасти его замок. ",
+          "target": "grand-hotel-mania",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 3
+        },
+        {
+          "label": "Сажусь на трон и объявляю, что спасением замка теперь командую я. Наконец-то статус, достойный героя. ",
+          "target": "grand-hotel-mania",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 4
+        }
+      ],
+      "answer": {
+        "prompt": "Что нужно ввести?",
+        "values": "",
+        "success": "",
+        "failure": "",
+        "caseSensitive": false
+      },
+      "hidden": {
+        "enabled": false,
+        "label": "Открыть",
+        "target": "",
+        "rewardItem": "",
+        "rewardImage": "",
+        "rewardText": ""
+      },
+      "dice": {
+        "buttonLabel": "",
+        "sides": 6,
+        "outcomes": []
+      },
+      "score": {
+        "variable": "",
+        "buttonLabel": "",
+        "outcomes": []
+      },
+      "search": {
+        "prompt": "Осмотрите картинку и найдите предмет",
+        "points": []
+      },
+      "qte": {
+        "buttonLabel": "Начать испытание",
+        "image": "",
+        "speed": 1400,
+        "count": 4,
+        "allowedMisses": 1,
+        "successText": "Испытание пройдено.",
+        "failureText": "Не успели.",
+        "success": "",
+        "failure": ""
+      },
+      "dialogue": {
+        "characterName": "Персонаж",
+        "characterImage": "",
+        "lines": [
+          "..."
+        ],
+        "secretLabel": "Осмотреть",
+        "secretItem": "",
+        "secretImage": "",
+        "secretText": ""
+      },
+      "puzzle": {
+        "pieces": 9,
+        "timeLimit": 90,
+        "buttonLabel": "Собрать пазл",
+        "successText": "Пазл собран.",
+        "failureText": "Время вышло.",
+        "success": "",
+        "failure": ""
+      },
+      "cipher": {
+        "prompt": "Соберите правильную комбинацию",
+        "length": 4,
+        "maxErrors": 3,
+        "buttonLabel": "Подтвердить",
+        "options": [
+          {
+            "label": "A",
+            "image": ""
+          },
+          {
+            "label": "B",
+            "image": ""
+          },
+          {
+            "label": "C",
+            "image": ""
+          }
+        ],
+        "answer": [
+          "A",
+          "B",
+          "C",
+          "A"
+        ],
+        "successText": "Код принят.",
+        "failureText": "Механизм заблокирован.",
+        "success": "",
+        "failure": ""
+      },
+      "ending": {
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "grand-hotel-mania",
+      "title": "Grand Hotel Mania",
+      "image": "assets/011-scenes-image.webp",
+      "music": "",
+      "text": "Последний портал открывается во вселенной **Grand Hotel Mania**. В отеле полный хаос: зомби ждут заселения, роботы требуют парковку для мехов, рыцари спорят с гостями, а вместо дверей в номера открылись порталы в другие миры.\n\nПоследний фрагмент лежит за стойкой регистрации. Если собрать все ядро сейчас, мультивселенную можно спасти.\n\n**Что будешь делать?**\n",
+      "mode": "story",
+      "rewardItem": "",
+      "rewardImage": "",
+      "rewardText": "",
+      "rewardCollect": true,
+      "choices": [
+        {
+          "label": "Я все успею, но сначала отдохну в бассейне этого отеля. ",
+          "target": "мультивселенная-спасена",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 1
+        },
+        {
+          "label": "Разберусь, какой портал куда ведет, спокойно разведу гостей по их мирам и заберу фрагмент.",
+          "target": "мультивселенная-спасена",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 2
+        },
+        {
+          "label": "Быстро распределю задачи: гостей успокоить, порталы закрыть, фрагмент вернуть на место.",
+          "target": "мультивселенная-спасена",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 3
+        },
+        {
+          "label": "Ударю по звонку на стойке так, чтобы услышала вся мультивселенная: финальный фрагмент мой!",
+          "target": "мультивселенная-спасена",
+          "tone": "neutral",
+          "image": "",
+          "requiresItem": "",
+          "consumesItem": false,
+          "scoreVar": "hr",
+          "scoreDelta": 4
+        }
+      ],
+      "answer": {
+        "prompt": "Что нужно ввести?",
+        "values": "",
+        "success": "",
+        "failure": "",
+        "caseSensitive": false
+      },
+      "hidden": {
+        "enabled": false,
+        "label": "Открыть",
+        "target": "",
+        "rewardItem": "",
+        "rewardImage": "",
+        "rewardText": ""
+      },
+      "dice": {
+        "buttonLabel": "",
+        "sides": 6,
+        "outcomes": []
+      },
+      "score": {
+        "variable": "",
+        "buttonLabel": "",
+        "outcomes": []
+      },
+      "search": {
+        "prompt": "Осмотрите картинку и найдите предмет",
+        "points": []
+      },
+      "qte": {
+        "buttonLabel": "Начать испытание",
+        "image": "",
+        "speed": 1400,
+        "count": 4,
+        "allowedMisses": 1,
+        "successText": "Испытание пройдено.",
+        "failureText": "Не успели.",
+        "success": "",
+        "failure": ""
+      },
+      "dialogue": {
+        "characterName": "Персонаж",
+        "characterImage": "",
+        "lines": [
+          "..."
+        ],
+        "secretLabel": "Осмотреть",
+        "secretItem": "",
+        "secretImage": "",
+        "secretText": ""
+      },
+      "puzzle": {
+        "pieces": 9,
+        "timeLimit": 90,
+        "buttonLabel": "Собрать пазл",
+        "successText": "Пазл собран.",
+        "failureText": "Время вышло.",
+        "success": "",
+        "failure": ""
+      },
+      "cipher": {
+        "prompt": "Соберите правильную комбинацию",
+        "length": 4,
+        "maxErrors": 3,
+        "buttonLabel": "Подтвердить",
+        "options": [
+          {
+            "label": "A",
+            "image": ""
+          },
+          {
+            "label": "B",
+            "image": ""
+          },
+          {
+            "label": "C",
+            "image": ""
+          }
+        ],
+        "answer": [
+          "A",
+          "B",
+          "C",
+          "A"
+        ],
+        "successText": "Код принят.",
+        "failureText": "Механизм заблокирован.",
+        "success": "",
+        "failure": ""
+      },
+      "ending": {
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "мультивселенная-спасена",
+      "title": "Мультивселенная спасена! ",
+      "image": "assets/016-scenes-image.webp",
+      "music": "",
+      "text": "Мультивселенная спасена! Твое приключение подошло к концу, настало время узнать, какой ты герой.",
+      "mode": "score",
+      "rewardItem": "",
+      "rewardImage": "",
+      "rewardText": "",
+      "rewardCollect": true,
+      "choices": [],
+      "answer": {
+        "prompt": "Что нужно ввести?",
+        "values": "",
+        "success": "",
+        "failure": "",
+        "caseSensitive": false
+      },
+      "hidden": {
+        "enabled": false,
+        "label": "Открыть",
+        "target": "",
+        "rewardItem": "",
+        "rewardImage": "",
+        "rewardText": ""
+      },
+      "dice": {
+        "buttonLabel": "",
+        "sides": 6,
+        "outcomes": []
+      },
+      "score": {
+        "variable": "hr",
+        "buttonLabel": "Какой я герой? ",
+        "outcomes": [
+          {
+            "label": "Огнезубик",
+            "from": 7,
+            "to": 10,
+            "target": "огнезубик",
+            "tone": "neutral"
+          },
+          {
+            "label": "Вонг",
+            "from": 11,
+            "to": 14,
+            "target": "вонг",
+            "tone": "neutral"
+          },
+          {
+            "label": "Несса",
+            "from": 15,
+            "to": 18,
+            "target": "несса",
+            "tone": "neutral"
+          },
+          {
+            "label": "Тед",
+            "from": 19,
+            "to": 21,
+            "target": "тед",
+            "tone": "neutral"
+          },
+          {
+            "label": "Дональд",
+            "from": 22,
+            "to": 25,
+            "target": "дональд",
+            "tone": "neutral"
+          },
+          {
+            "label": "Датч",
+            "from": 26,
+            "to": 28,
+            "target": "датч",
+            "tone": "neutral"
+          }
+        ]
+      },
+      "search": {
+        "prompt": "Осмотрите картинку и найдите предмет",
+        "points": []
+      },
+      "qte": {
+        "buttonLabel": "Начать испытание",
+        "image": "",
+        "speed": 1400,
+        "count": 4,
+        "allowedMisses": 1,
+        "successText": "Испытание пройдено.",
+        "failureText": "Не успели.",
+        "success": "",
+        "failure": ""
+      },
+      "dialogue": {
+        "characterName": "Персонаж",
+        "characterImage": "",
+        "lines": [
+          "..."
+        ],
+        "secretLabel": "Осмотреть",
+        "secretItem": "",
+        "secretImage": "",
+        "secretText": ""
+      },
+      "puzzle": {
+        "pieces": 9,
+        "timeLimit": 90,
+        "buttonLabel": "Собрать пазл",
+        "successText": "Пазл собран.",
+        "failureText": "Время вышло.",
+        "success": "",
+        "failure": ""
+      },
+      "cipher": {
+        "prompt": "Соберите правильную комбинацию",
+        "length": 4,
+        "maxErrors": 3,
+        "buttonLabel": "Подтвердить",
+        "options": [
+          {
+            "label": "A",
+            "image": ""
+          },
+          {
+            "label": "B",
+            "image": ""
+          },
+          {
+            "label": "C",
+            "image": ""
+          }
+        ],
+        "answer": [
+          "A",
+          "B",
+          "C",
+          "A"
+        ],
+        "successText": "Код принят.",
+        "failureText": "Механизм заблокирован.",
+        "success": "",
+        "failure": ""
+      },
+      "ending": {
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "огнезубик",
+      "title": "Огнезубик",
+      "image": "assets/014-scenes-image.webp",
+      "music": "",
+      "text": "**Ты — Огнезубик из Rush Royale!**\n\nМилый, добродушный и всегда готов найти радость даже посреди мультивселенского сбоя. Для тебя любое приключение становится лучше, если рядом есть что-нибудь вкусное.\n\nНо пусть враги не расслабляются: если опасность подойдет слишком близко, этот милый дракончик быстро покажет зубки.\n",
+      "mode": "ending",
+      "rewardItem": "",
+      "rewardImage": "",
+      "rewardText": "",
+      "rewardCollect": true,
+      "choices": [],
+      "answer": {
+        "prompt": "Что нужно ввести?",
+        "values": "",
+        "success": "",
+        "failure": "",
+        "caseSensitive": false
+      },
+      "hidden": {
+        "enabled": false,
+        "label": "Открыть",
+        "target": "",
+        "rewardItem": "",
+        "rewardImage": "",
+        "rewardText": ""
+      },
+      "dice": {
+        "buttonLabel": "",
+        "sides": 6,
+        "outcomes": []
+      },
+      "score": {
+        "variable": "",
+        "buttonLabel": "",
+        "outcomes": []
+      },
+      "search": {
+        "prompt": "Осмотрите картинку и найдите предмет",
+        "points": []
+      },
+      "qte": {
+        "buttonLabel": "Начать испытание",
+        "image": "",
+        "speed": 1400,
+        "count": 4,
+        "allowedMisses": 1,
+        "successText": "Испытание пройдено.",
+        "failureText": "Не успели.",
+        "success": "",
+        "failure": ""
+      },
+      "dialogue": {
+        "characterName": "Персонаж",
+        "characterImage": "",
+        "lines": [
+          "..."
+        ],
+        "secretLabel": "Осмотреть",
+        "secretItem": "",
+        "secretImage": "",
+        "secretText": ""
+      },
+      "puzzle": {
+        "pieces": 9,
+        "timeLimit": 90,
+        "buttonLabel": "Собрать пазл",
+        "successText": "Пазл собран.",
+        "failureText": "Время вышло.",
+        "success": "",
+        "failure": ""
+      },
+      "cipher": {
+        "prompt": "Соберите правильную комбинацию",
+        "length": 4,
+        "maxErrors": 3,
+        "buttonLabel": "Подтвердить",
+        "options": [
+          {
+            "label": "A",
+            "image": ""
+          },
+          {
+            "label": "B",
+            "image": ""
+          },
+          {
+            "label": "C",
+            "image": ""
+          }
+        ],
+        "answer": [
+          "A",
+          "B",
+          "C",
+          "A"
+        ],
+        "successText": "Код принят.",
+        "failureText": "Механизм заблокирован.",
+        "success": "",
+        "failure": ""
+      },
+      "ending": {
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "вонг",
+      "title": "Вонг",
+      "image": "assets/015-scenes-image.webp",
+      "music": "",
+      "text": "**Ты — Вонг из Zero City!**\n\nТы не паникуешь, даже когда вокруг зомби, масса порталов и разбитое ядро мультивселенной. Твой главный инструмент — спокойная голова. Ты умеешь осмотреться, собрать факты и найти решение там, где \nдругие бегут куда глаза глядят.\n\nМультивселенную спасают не только силой. Иногда достаточно ума, выдержки и хорошего плана.\n",
+      "mode": "ending",
+      "rewardItem": "",
+      "rewardImage": "",
+      "rewardText": "",
+      "rewardCollect": true,
+      "choices": [],
+      "answer": {
+        "prompt": "Что нужно ввести?",
+        "values": "",
+        "success": "",
+        "failure": "",
+        "caseSensitive": false
+      },
+      "hidden": {
+        "enabled": false,
+        "label": "Открыть",
+        "target": "",
+        "rewardItem": "",
+        "rewardImage": "",
+        "rewardText": ""
+      },
+      "dice": {
+        "buttonLabel": "",
+        "sides": 6,
+        "outcomes": []
+      },
+      "score": {
+        "variable": "",
+        "buttonLabel": "",
+        "outcomes": []
+      },
+      "search": {
+        "prompt": "Осмотрите картинку и найдите предмет",
+        "points": []
+      },
+      "qte": {
+        "buttonLabel": "Начать испытание",
+        "image": "",
+        "speed": 1400,
+        "count": 4,
+        "allowedMisses": 1,
+        "successText": "Испытание пройдено.",
+        "failureText": "Не успели.",
+        "success": "",
+        "failure": ""
+      },
+      "dialogue": {
+        "characterName": "Персонаж",
+        "characterImage": "",
+        "lines": [
+          "..."
+        ],
+        "secretLabel": "Осмотреть",
+        "secretItem": "",
+        "secretImage": "",
+        "secretText": ""
+      },
+      "puzzle": {
+        "pieces": 9,
+        "timeLimit": 90,
+        "buttonLabel": "Собрать пазл",
+        "successText": "Пазл собран.",
+        "failureText": "Время вышло.",
+        "success": "",
+        "failure": ""
+      },
+      "cipher": {
+        "prompt": "Соберите правильную комбинацию",
+        "length": 4,
+        "maxErrors": 3,
+        "buttonLabel": "Подтвердить",
+        "options": [
+          {
+            "label": "A",
+            "image": ""
+          },
+          {
+            "label": "B",
+            "image": ""
+          },
+          {
+            "label": "C",
+            "image": ""
+          }
+        ],
+        "answer": [
+          "A",
+          "B",
+          "C",
+          "A"
+        ],
+        "successText": "Код принят.",
+        "failureText": "Механизм заблокирован.",
+        "success": "",
+        "failure": ""
+      },
+      "ending": {
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "несса",
+      "title": "Несса",
+      "image": "assets/017-scenes-image.webp",
+      "music": "",
+      "text": "**Ты — Несса из War Robots!**\n\nТы смело идешь навстречу опасности, но никогда не действуешь вслепую. Твой стиль — технологии, тактика и точный расчет. Пока вокруг шум и хаос, ты уже видишь маршрут, цель и лучший момент для маневра.\n\nС таким подходом даже огромные мехи и сбои мультивселенной становятся просто задачкой на тактическое мышление.\n",
+      "mode": "ending",
+      "rewardItem": "",
+      "rewardImage": "",
+      "rewardText": "",
+      "rewardCollect": true,
+      "choices": [],
+      "answer": {
+        "prompt": "Что нужно ввести?",
+        "values": "",
+        "success": "",
+        "failure": "",
+        "caseSensitive": false
+      },
+      "hidden": {
+        "enabled": false,
+        "label": "Открыть",
+        "target": "",
+        "rewardItem": "",
+        "rewardImage": "",
+        "rewardText": ""
+      },
+      "dice": {
+        "buttonLabel": "",
+        "sides": 6,
+        "outcomes": []
+      },
+      "score": {
+        "variable": "",
+        "buttonLabel": "",
+        "outcomes": []
+      },
+      "search": {
+        "prompt": "Осмотрите картинку и найдите предмет",
+        "points": []
+      },
+      "qte": {
+        "buttonLabel": "Начать испытание",
+        "image": "",
+        "speed": 1400,
+        "count": 4,
+        "allowedMisses": 1,
+        "successText": "Испытание пройдено.",
+        "failureText": "Не успели.",
+        "success": "",
+        "failure": ""
+      },
+      "dialogue": {
+        "characterName": "Персонаж",
+        "characterImage": "",
+        "lines": [
+          "..."
+        ],
+        "secretLabel": "Осмотреть",
+        "secretItem": "",
+        "secretImage": "",
+        "secretText": ""
+      },
+      "puzzle": {
+        "pieces": 9,
+        "timeLimit": 90,
+        "buttonLabel": "Собрать пазл",
+        "successText": "Пазл собран.",
+        "failureText": "Время вышло.",
+        "success": "",
+        "failure": ""
+      },
+      "cipher": {
+        "prompt": "Соберите правильную комбинацию",
+        "length": 4,
+        "maxErrors": 3,
+        "buttonLabel": "Подтвердить",
+        "options": [
+          {
+            "label": "A",
+            "image": ""
+          },
+          {
+            "label": "B",
+            "image": ""
+          },
+          {
+            "label": "C",
+            "image": ""
+          }
+        ],
+        "answer": [
+          "A",
+          "B",
+          "C",
+          "A"
+        ],
+        "successText": "Код принят.",
+        "failureText": "Механизм заблокирован.",
+        "success": "",
+        "failure": ""
+      },
+      "ending": {
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "тед",
+      "title": "Тед",
+      "image": "assets/012-scenes-image.webp",
+      "music": "",
+      "text": "**Ты — Тед из Grand Hotel Mania!**\n\nКогда вокруг хаос, ты не тратишь время на панику. Починить портал, успокоить гостей, помочь команде, раздать задачи и еще проверить, что происходит на кухне — для тебя это звучит как обычный рабочий день.\n\nТы умеешь находить выход из любой ситуации. Рядом с тобой даже самый странный сбой превращается в проблему, которую можно быстро и аккуратно решить.\n",
+      "mode": "ending",
+      "rewardItem": "",
+      "rewardImage": "",
+      "rewardText": "",
+      "rewardCollect": true,
+      "choices": [],
+      "answer": {
+        "prompt": "Что нужно ввести?",
+        "values": "",
+        "success": "",
+        "failure": "",
+        "caseSensitive": false
+      },
+      "hidden": {
+        "enabled": false,
+        "label": "Открыть",
+        "target": "",
+        "rewardItem": "",
+        "rewardImage": "",
+        "rewardText": ""
+      },
+      "dice": {
+        "buttonLabel": "",
+        "sides": 6,
+        "outcomes": []
+      },
+      "score": {
+        "variable": "",
+        "buttonLabel": "",
+        "outcomes": []
+      },
+      "search": {
+        "prompt": "Осмотрите картинку и найдите предмет",
+        "points": []
+      },
+      "qte": {
+        "buttonLabel": "Начать испытание",
+        "image": "",
+        "speed": 1400,
+        "count": 4,
+        "allowedMisses": 1,
+        "successText": "Испытание пройдено.",
+        "failureText": "Не успели.",
+        "success": "",
+        "failure": ""
+      },
+      "dialogue": {
+        "characterName": "Персонаж",
+        "characterImage": "",
+        "lines": [
+          "..."
+        ],
+        "secretLabel": "Осмотреть",
+        "secretItem": "",
+        "secretImage": "",
+        "secretText": ""
+      },
+      "puzzle": {
+        "pieces": 9,
+        "timeLimit": 90,
+        "buttonLabel": "Собрать пазл",
+        "successText": "Пазл собран.",
+        "failureText": "Время вышло.",
+        "success": "",
+        "failure": ""
+      },
+      "cipher": {
+        "prompt": "Соберите правильную комбинацию",
+        "length": 4,
+        "maxErrors": 3,
+        "buttonLabel": "Подтвердить",
+        "options": [
+          {
+            "label": "A",
+            "image": ""
+          },
+          {
+            "label": "B",
+            "image": ""
+          },
+          {
+            "label": "C",
+            "image": ""
+          }
+        ],
+        "answer": [
+          "A",
+          "B",
+          "C",
+          "A"
+        ],
+        "successText": "Код принят.",
+        "failureText": "Механизм заблокирован.",
+        "success": "",
+        "failure": ""
+      },
+      "ending": {
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "дональд",
+      "title": "Дональд",
+      "image": "assets/013-scenes-image.webp",
+      "music": "",
+      "text": "**Ты — Дональд из Hustle Castle!**\n\nТы заходишь в любой мир так, будто тебя там всегда ждали. Для тебя важно не просто решить проблему, а сделать это уверенно, четко и эффектно.\n\nЕсли уж спасать мультивселенную, то так, чтобы все знали, кто здесь главный герой. \n",
+      "mode": "ending",
+      "rewardItem": "",
+      "rewardImage": "",
+      "rewardText": "",
+      "rewardCollect": true,
+      "choices": [],
+      "answer": {
+        "prompt": "Что нужно ввести?",
+        "values": "",
+        "success": "",
+        "failure": "",
+        "caseSensitive": false
+      },
+      "hidden": {
+        "enabled": false,
+        "label": "Открыть",
+        "target": "",
+        "rewardItem": "",
+        "rewardImage": "",
+        "rewardText": ""
+      },
+      "dice": {
+        "buttonLabel": "",
+        "sides": 6,
+        "outcomes": []
+      },
+      "score": {
+        "variable": "",
+        "buttonLabel": "",
+        "outcomes": []
+      },
+      "search": {
+        "prompt": "Осмотрите картинку и найдите предмет",
+        "points": []
+      },
+      "qte": {
+        "buttonLabel": "Начать испытание",
+        "image": "",
+        "speed": 1400,
+        "count": 4,
+        "allowedMisses": 1,
+        "successText": "Испытание пройдено.",
+        "failureText": "Не успели.",
+        "success": "",
+        "failure": ""
+      },
+      "dialogue": {
+        "characterName": "Персонаж",
+        "characterImage": "",
+        "lines": [
+          "..."
+        ],
+        "secretLabel": "Осмотреть",
+        "secretItem": "",
+        "secretImage": "",
+        "secretText": ""
+      },
+      "puzzle": {
+        "pieces": 9,
+        "timeLimit": 90,
+        "buttonLabel": "Собрать пазл",
+        "successText": "Пазл собран.",
+        "failureText": "Время вышло.",
+        "success": "",
+        "failure": ""
+      },
+      "cipher": {
+        "prompt": "Соберите правильную комбинацию",
+        "length": 4,
+        "maxErrors": 3,
+        "buttonLabel": "Подтвердить",
+        "options": [
+          {
+            "label": "A",
+            "image": ""
+          },
+          {
+            "label": "B",
+            "image": ""
+          },
+          {
+            "label": "C",
+            "image": ""
+          }
+        ],
+        "answer": [
+          "A",
+          "B",
+          "C",
+          "A"
+        ],
+        "successText": "Код принят.",
+        "failureText": "Механизм заблокирован.",
+        "success": "",
+        "failure": ""
+      },
+      "ending": {
+        "tone": "neutral"
+      }
+    },
+    {
+      "id": "датч",
+      "title": "Датч",
+      "image": "assets/018-scenes-image.webp",
+      "music": "",
+      "text": "**Ты — Датч из Tacticool!**\n\nПорталы, зомби, роботы, ловушки, сбои? Отлично, наконец-то нормальное приключение. Ты не любишь слишком долго обсуждать план, зато умеешь действовать быстро, мощно и без сомнений.\n\nЕсли проблема встала на пути, она сама виновата. Ты влетаешь в неприятности с ноги и чаще всего выходишь из них победителем.\n",
+      "mode": "ending",
+      "rewardItem": "",
+      "rewardImage": "",
+      "rewardText": "",
+      "rewardCollect": true,
+      "choices": [],
+      "answer": {
+        "prompt": "Что нужно ввести?",
+        "values": "",
+        "success": "",
+        "failure": "",
+        "caseSensitive": false
+      },
+      "hidden": {
+        "enabled": false,
+        "label": "Открыть",
+        "target": "",
+        "rewardItem": "",
+        "rewardImage": "",
+        "rewardText": ""
+      },
+      "dice": {
+        "buttonLabel": "",
+        "sides": 6,
+        "outcomes": []
+      },
+      "score": {
+        "variable": "",
+        "buttonLabel": "",
+        "outcomes": []
+      },
+      "search": {
+        "prompt": "Осмотрите картинку и найдите предмет",
+        "points": []
+      },
+      "qte": {
+        "buttonLabel": "Начать испытание",
+        "image": "",
+        "speed": 1400,
+        "count": 4,
+        "allowedMisses": 1,
+        "successText": "Испытание пройдено.",
+        "failureText": "Не успели.",
+        "success": "",
+        "failure": ""
+      },
+      "dialogue": {
+        "characterName": "Персонаж",
+        "characterImage": "",
+        "lines": [
+          "..."
+        ],
+        "secretLabel": "Осмотреть",
+        "secretItem": "",
+        "secretImage": "",
+        "secretText": ""
+      },
+      "puzzle": {
+        "pieces": 9,
+        "timeLimit": 90,
+        "buttonLabel": "Собрать пазл",
+        "successText": "Пазл собран.",
+        "failureText": "Время вышло.",
+        "success": "",
+        "failure": ""
+      },
+      "cipher": {
+        "prompt": "Соберите правильную комбинацию",
+        "length": 4,
+        "maxErrors": 3,
+        "buttonLabel": "Подтвердить",
+        "options": [
+          {
+            "label": "A",
+            "image": ""
+          },
+          {
+            "label": "B",
+            "image": ""
+          },
+          {
+            "label": "C",
+            "image": ""
+          }
+        ],
+        "answer": [
+          "A",
+          "B",
+          "C",
+          "A"
+        ],
+        "successText": "Код принят.",
+        "failureText": "Механизм заблокирован.",
+        "success": "",
+        "failure": ""
+      },
+      "ending": {
+        "tone": "neutral"
+      }
+    }
+  ]
+}

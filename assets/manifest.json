@@ -1,0 +1,113 @@
+{
+  "assets": [
+    {
+      "name": "assets/001-coverimage.webp",
+      "mime": "image/webp",
+      "original": "coverImage",
+      "source": "/assets/asset_WKvftBJ0BXwcSnpA5nI/group-1321317472.webp"
+    },
+    {
+      "name": "assets/002-theme-backgroundimage.webp",
+      "mime": "image/webp",
+      "original": "theme.backgroundImage",
+      "source": "/assets/asset_YdbfvCqfhO77p21n_9U/chatgpt-image-11-%D0%B8%D1%8E%D0%BD-2026-%D0%B3-13_39_18.webp"
+    },
+    {
+      "name": "assets/003-theme-music.mp3",
+      "mime": "audio/mpeg",
+      "original": "theme.music",
+      "source": "/assets/asset_6evw4mMe_KK0tNDaBeM/last-hero-chosic-com.mp3"
+    },
+    {
+      "name": "assets/004-theme-clicksound.wav",
+      "mime": "audio/wav",
+      "original": "theme.clickSound",
+      "source": "/assets/asset_KwbetOlVpQRG2TL3a98/mixkit-game-click-1114.wav"
+    },
+    {
+      "name": "assets/005-scenes-image.webp",
+      "mime": "image/webp",
+      "original": "scenes.0.image",
+      "source": "/assets/asset_6B7bgIjzoZxWiMPlAZQ/chatgpt-image-10-%D0%B8%D1%8E%D0%BD-2026-%D0%B3-15_32_00.webp"
+    },
+    {
+      "name": "assets/006-scenes-image.webp",
+      "mime": "image/webp",
+      "original": "scenes.2.image",
+      "source": "/assets/asset_t5-UVWPdegfKnWohnao/chatgpt-image-10-%D0%B8%D1%8E%D0%BD-2026-%D0%B3-15_45_51.webp"
+    },
+    {
+      "name": "assets/007-scenes-image.webp",
+      "mime": "image/webp",
+      "original": "scenes.1.image",
+      "source": "/assets/asset_S9RJNvCpiaGHw_Genjs/chatgpt-image-10-%D0%B8%D1%8E%D0%BD-2026-%D0%B3-15_40_58.webp"
+    },
+    {
+      "name": "assets/008-scenes-image.webp",
+      "mime": "image/webp",
+      "original": "scenes.3.image",
+      "source": "/assets/asset_HfI2ZvFzUkUJHW7lSQ0/chatgpt-image-10-%D0%B8%D1%8E%D0%BD-2026-%D0%B3-15_49_39.webp"
+    },
+    {
+      "name": "assets/009-scenes-image.webp",
+      "mime": "image/webp",
+      "original": "scenes.4.image",
+      "source": "/assets/asset_3G4jyr_92ENHWPRu3mU/chatgpt-image-10-%D0%B8%D1%8E%D0%BD-2026-%D0%B3-15_53_20.webp"
+    },
+    {
+      "name": "assets/010-scenes-image.webp",
+      "mime": "image/webp",
+      "original": "scenes.5.image",
+      "source": "/assets/asset_unEXWr-lxIn_Ea2kxbc/chatgpt-image-10-%D0%B8%D1%8E%D0%BD-2026-%D0%B3-16_00_44.webp"
+    },
+    {
+      "name": "assets/011-scenes-image.webp",
+      "mime": "image/webp",
+      "original": "scenes.6.image",
+      "source": "/assets/asset_O0n3E7IEBn4yh_Qpuus/chatgpt-image-10-%D0%B8%D1%8E%D0%BD-2026-%D0%B3-16_08_23.webp"
+    },
+    {
+      "name": "assets/012-scenes-image.webp",
+      "mime": "image/webp",
+      "original": "scenes.11.image",
+      "source": "/assets/asset_75gBVDF3eQ5IEoll82E/frame-1321317686.webp"
+    },
+    {
+      "name": "assets/013-scenes-image.webp",
+      "mime": "image/webp",
+      "original": "scenes.12.image",
+      "source": "/assets/asset_rlQmwudriyrtU902i0o/frame-1321317683.webp"
+    },
+    {
+      "name": "assets/014-scenes-image.webp",
+      "mime": "image/webp",
+      "original": "scenes.8.image",
+      "source": "/assets/asset_cIT6t6EBFVm0YCcfqCY/frame-1321317688.webp"
+    },
+    {
+      "name": "assets/015-scenes-image.webp",
+      "mime": "image/webp",
+      "original": "scenes.9.image",
+      "source": "/assets/asset_NjtV-uYbaPQ_T6zFbkY/frame-1321317684.webp"
+    },
+    {
+      "name": "assets/016-scenes-image.webp",
+      "mime": "image/webp",
+      "original": "scenes.7.image",
+      "source": "/assets/asset_dVeh9tmdAJ3mUsc-6QU/chatgpt-image-10-%D0%B8%D1%8E%D0%BD-2026-%D0%B3-15_28_45.webp"
+    },
+    {
+      "name": "assets/017-scenes-image.webp",
+      "mime": "image/webp",
+      "original": "scenes.10.image",
+      "source": "/assets/asset_UWqdlTUYxz96Jpmet84/frame-1321317685.webp"
+    },
+    {
+      "name": "assets/018-scenes-image.webp",
+      "mime": "image/webp",
+      "original": "scenes.13.image",
+      "source": "/assets/asset_bg7JcnSRAw0JdfnQoRA/frame-1321317687.webp"
+    }
+  ],
+  "skipped": []
+}
