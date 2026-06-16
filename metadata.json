@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "packageVersion": 1,
-  "exportedAt": "2026-06-15T13:48:36.455Z",
+  "exportedAt": "2026-06-16T13:26:19.187Z",
   "published": true,
   "project": {
     "id": "project",
@@ -11,7 +11,7 @@
     "workspaceId": "workspace_XAywtzpDRlY3C3kL",
     "visibility": "private",
     "createdAt": "2026-06-10T13:54:02.848Z",
-    "updatedAt": "2026-06-15T13:48:29.731Z",
-    "publishedAt": "2026-06-15T13:47:05.043Z"
+    "updatedAt": "2026-06-16T13:26:12.677Z",
+    "publishedAt": "2026-06-16T13:21:16.716Z"
   }
 }

@@ -227,6 +227,7 @@ let digestPlayState = createDigestPlayState();
 let mapReaderTicker = null;
 let musicAudio = null;
 let webMusic = null;
+let musicSyncToken = 0;
 let audioEnabled = true;
 let audioContext = null;
 const audioBufferCache = new Map();
@@ -3487,43 +3488,40 @@ function applyTheme() {
 
 function syncBackgroundMusic() {
   const music = currentBackgroundMusic();
-  const volume = audioEnabled ? getAudioVolume("music") : 0;
-  if (!music) {
-    stopWebMusic(520);
-    fadeAudio(musicAudio, 0, 520, (audio) => {
-      audio.pause();
-      if (musicAudio === audio) musicAudio = null;
-    });
+  const token = ++musicSyncToken;
+  if (!music || !audioEnabled) {
+    stopBackgroundMusic(360);
     return;
   }
   const source = resolveMediaUrl(music);
-  const webContext = getAudioContext();
-  if (webContext) {
-    if (webMusic?.url === source) {
-      fadeWebMusic(webMusic, volume, 420);
-      fadeAudio(musicAudio, 0, 420, (audio) => {
-        audio.pause();
-        if (musicAudio === audio) musicAudio = null;
-      });
-      return;
-    }
-    const previousWebMusic = webMusic;
-    startWebMusic(music, volume, 680)
-      .then(() => {
-        stopWebMusic(680, previousWebMusic);
-        fadeAudio(musicAudio, 0, 680, (audio) => {
-          audio.pause();
-          if (musicAudio === audio) musicAudio = null;
-        });
-      })
-      .catch(() => syncHtmlBackgroundMusic(music, volume));
+  const volume = getAudioVolume("music");
+  if (webMusic?.url === source) {
+    fadeWebMusic(webMusic, volume, 260);
+    stopHtmlMusic(260);
     return;
   }
-  syncHtmlBackgroundMusic(music, volume);
+  startWebMusic(music, volume, 520)
+    .then((nextMusic) => {
+      const stillCurrent = token === musicSyncToken && audioEnabled && resolveMediaUrl(currentBackgroundMusic()) === nextMusic.url;
+      if (!stillCurrent) {
+        stopWebMusic(0, nextMusic);
+        return;
+      }
+      const previousWebMusic = webMusic;
+      webMusic = nextMusic;
+      fadeWebMusic(nextMusic, getAudioVolume("music"), 520);
+      stopWebMusic(420, previousWebMusic);
+      stopHtmlMusic(420);
+    })
+    .catch(() => {
+      if (token === musicSyncToken && audioEnabled) syncHtmlBackgroundMusic(music, volume, token);
+    });
 }
 
-function syncHtmlBackgroundMusic(music, volume) {
+function syncHtmlBackgroundMusic(music, volume, token = musicSyncToken) {
+  if (token !== musicSyncToken || !audioEnabled || !music) return;
   const source = resolveMediaUrl(music);
+  stopWebMusic(360);
   if (musicAudio?.src === source) {
     musicAudio.loop = true;
     if (audioEnabled) musicAudio.play().catch(() => {});
@@ -3559,13 +3557,12 @@ async function startWebMusic(url, volume, duration = 680) {
   source.connect(gain);
   source.start(0);
   const music = { url: sourceUrl, source, gain };
-  webMusic = music;
-  fadeWebMusic(music, volume, duration);
+  fadeWebMusic(music, 0, 0);
   return music;
 }
 
 function fadeWebMusic(music, targetVolume, duration = 500, done) {
-  const context = getAudioContext();
+  const context = audioContext;
   if (!context || !music?.gain) return;
   const gain = music.gain.gain;
   const now = context.currentTime;
@@ -3588,6 +3585,22 @@ function stopWebMusic(duration = 500, target = webMusic) {
       target.gain.disconnect();
     } catch (error) {}
   });
+}
+
+function stopHtmlMusic(duration = 360) {
+  const audio = musicAudio;
+  if (!audio) return;
+  musicAudio = null;
+  fadeAudio(audio, 0, duration, (item) => {
+    item.pause();
+    item.removeAttribute("src");
+    item.load?.();
+  });
+}
+
+function stopBackgroundMusic(duration = 360) {
+  stopWebMusic(duration);
+  stopHtmlMusic(duration);
 }
 
 function currentBackgroundMusic() {
